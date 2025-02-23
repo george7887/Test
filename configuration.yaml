@@ -1,0 +1,23 @@
+# Home Assistant integration (MQTT discovery)
+homeassistant: false
+
+# allow new devices to join
+permit_join: true
+
+# MQTT settings
+mqtt:
+  # MQTT base topic for zigbee2mqtt MQTT messages
+  base_topic: zigbee2mqtt
+  # MQTT server URL
+  server: mqtt://192.168.1.25:1883
+  # MQTT server authentication, uncomment if requered:
+  user: mqtt
+  password: 78mqtt87
+
+
+serial:
+  # Location of adapter
+  port: /dev/ttyACM0
+
+frontend:
+  port: 8080
